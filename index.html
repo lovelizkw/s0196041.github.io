@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Задание № 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+
+            <div class="logo">
+                <img src="logo.jpg" alt="Логотип сайта" width="100" height="100">
+            </div>
+            
+            <nav>
+    <ul class="nav-menu">
+        <li><a href="#hyperlinks">Ссылки</a></li>
+        <li><a href="#table">Таблица</a></li>
+        <li><a href="#formi">Форма</a></li>
+    </ul>
+</nav>
+        </div>
+    </header>
+
+    <div class="site-title-container">
+        <div class="site-title">Задание 2: разработка сайта на css</div>
+    </div>
+
+    <main class="container">
+        <section class="content-section">
+            <div id="hyperlinks" class="highlighted">
+            <a id="top"></a>
+            <h2>Список гиперссылок</h2>
+            
+            <ul class="hyperlinks-list"> 
+                  <a id="top"></a>
+  <h1>Гиперссылки</h1>
+  
+  <ul> 
+    <li>
+  <a href = "http://kubsu.ru" target = "_blank"> Официальный сайт КубГУ (HTTP) </a>
+</li> 
+
+ <li>
+  <a href = "https://kubsu.ru" target = "_blank"> Официальный сайт КубГУ </a>
+</li> 
+
+  <li>
+    <a href = "https://kubsu.ru" target = "_blank">
+      <img src="flower.jpg" alt="Ссылка-изображение" id="a1" width="300" height="200">
+    </a>
+  </li>
+    
+    <li>
+      <a href="#formi">Сокращенная ссылка на внутреннюю страницу (к форме)</a>
+    </li> 
+    
+    <li>
+      <a href="#top">Сокращенная ссылка на главную страницу (в начало)</a>
+    </li> 
+    
+    <li>
+      <a href="#fragment">Ссылка на фрагмент текущей страницы</a>
+    </li> 
+    
+    <li>
+      <a href="https://www.kubsu.ru/ru/search?key=программирование" target="_blank">Ссылка с тремя параметрами в URL </a>
+    </li> 
+    
+    <li>
+      <a href="https://www.kubsu.ru/ru/education/programs?id=1" target="_blank">Ссылка с параметром id в URL</a>
+    </li> 
+    
+    <li>
+      <a href="https://kubsu.ru/ru/news" target="_blank"> Относительная ссылка на страницу в текущем каталоге</a>
+    </li> 
+    
+    <li>
+      <a href="https://kubsu.ru/ru/about" target="_blank">Относительная ссылка на страницу в каталоге about</a>
+    </li> 
+    
+    <li>
+      <a href="https://kubsu.ru/ru" target="_blank">Относительная ссылка на страницу в каталоге уровнем выше текущего</a>
+    </li> 
+    
+    <li>
+      <a href="https://kubsu.ru" target="_blank">Относительная ссылка на страницу в каталоге двумя уровнями выше</a>
+    </li> 
+    
+    <li>
+      <p>Кубанский государственный университет 5 сентября отмечает 
+        <a href="https://www.kubsu.ru/ru/node/44498" target="_blank">105-летний юбилей.</a> 
+        В этот день в 1920 году вуз впервые открыл двери для студентов трех факультетов.</p>
+    </li> 
+    
+    <li>
+      <a href="https://ru.ruwiki.ru/wiki/Кубанский_государственный_университет#Структура" target="_blank">Ссылка на фрагмент страницы стороннего сайта</a>
+    </li>
+    
+    <li>
+      <img src="кубгу.jpg" alt="Ссылка-изображение" usemap="#mymap" width="800" height="200">
+      <map name="mymap">
+
+        <area shape="rect" coords="0,0,400,200" href="https://kubsu.ru" alt="главная" target="_blank">
+        <area shape="rect" coords="400,0,800,200" href="https://kubsu.ru/ru/news" alt="новости" target="_blank">
+
+      </map>
+    </li>
+    
+    <li>
+      <a href="">Ссылка с пустым href </a>
+    </li> 
+    
+    <li>
+      <a>Ссылка без href</a>
+    </li>
+    
+    <li>
+      <a href="https://kubsu.ru" rel="nofollow" target="_blank">Ссылка, по которой запрещен переход поисковикам </a>
+    </li> 
+    
+    <li>
+      <a href="https://kubsu.ru" rel="noindex" target="_blank">Ссылка, запрещенная для индексации поисковиками </a>
+    </li>
+    
+    <li>
+      Нумерованный список ссылок с подписями title:
+      <ol>
+        <li><a href="https://kubsu.ru" title="Официальный сайт университета" target="_blank">Кубанский государственный университет</a></li>
+        <li><a href="https://kubsu.ru/ru/news" title="Новости КубГУ" target="_blank">Новости</a></li>
+        <li><a href="https://kubsu.ru/ru/science" title="Научная деятельность " target="_blank">Наука</a></li>
+      </ol>
+    </li> 
+    
+    <li>
+      <a href="ftp://login:password@ftp.kubsu.ru/documents/schedule.txt" target="_blank">Ссылка на файл на сервере FTP </a>
+    </li> 
+            </ul>
+        </section>
+
+        <section id="fragment" class="content-section">
+            <h2>Фрагмент страницы</h2>
+            <p>Это раздел страницы, на который ведет ссылка</p>
+            <a href="#top" class="back-to-top">Вернуться наверх</a>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <table id="table">
+            <h2>Таблица</h2>
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Композитор</th>
+                        <th>Место рождения</th>
+                        <th>Произведение</th>
+                         <th colspan="2">Информация о произведении</th>
+                        <th>Год создания</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Людвиг ван Бетховен</td>
+                        <td>Бонн, Германия</td>
+                        <td>Симфония № 5 "Симфония судьбы"</td>
+                        <td>до минор</td>
+                        <td rowspan="2">4 части</td>
+                        <td>1808</td>
+                    </tr>
+                    <tr>
+                        <td>Вольфганг Амадей Моцарт</td>
+                        <td>Зальцбург, Австрия</td>
+                        <td>Симфония №40 "Большая соль-минорная симфония"</td>
+                        <td>соль минор</td>
+                        <td>1788</td>
+                    </tr>
+                    <tr>
+                        <td>Иоганн Себастьян Бах</td>
+                        <td>Айзенах, Германия</td>
+                        <td>Токката и фуга ре минор</td>
+                        <td>ре минор</td>
+                        <td>2 части</td>
+                        <td>1704</td>
+                    </tr>
+                    <tr>
+                        <td>Петр Ильич Чайковский</td>
+                        <td>Воткинск, Россия</td>
+                        <td>Симфония №6 "Патетическая"</td>
+                        <td>си минор</td>
+                        <td>4 части</td>
+                        <td>1893</td>
+                    </tr>
+                    <tr>
+                        <td>Фредерик Шопен</td>
+                        <td>Желязова-Воля, Польша</td>
+                        <td>Ноктюрн ми-бемоль мажор</td>
+                        <td>ми-бемоль мажор</td>
+                        <td>1 часть</td>
+                        <td>1830</td>
+                    </tr>
+                    <tr>
+                        <td>Николай Римский-Корсаков</td>
+                        <td>Тихвин, Россия</td>
+                        <td>Опера - былина "Садко"</td>
+                        <td>ре мажор (основная)</td>
+                        <td>7 картин</td>
+                        <td>1896</td>
+                    </tr>
+                </tbody>
+            </table>
+            </table>
+        </section>
+
+        <section id="formi" class="content-section form-section">
+    <h3>Форма</h3
+        >
+     <form action="/" method="POST">
+      
+        <label>ФИО: <br />
+        <input name="field-name-1"
+        placeholder="Введите ваше ФИО" required />
+      </label><br />
+        
+       
+        <label>Номер телефона: <br />
+        <input name="phone"
+         pattern="[0-9+]{11,15}"
+        placeholder="+7 (999) 999-99-99" required />
+      </label><br />
+        
+        
+        <label>
+        Электронная почта (email):<br />
+        <input name="field-email"
+          type="email"
+          placeholder="fio@mail.ru" />
+      </label><br />
+        
+        
+        <label>
+        Дата рождения:<br />
+        <input name="field-date"
+          value="2004-04-04"
+          type="date" />
+      </label><br />
+        
+       
+        Пол:<br />
+      <label><input type="radio" checked="checked"
+        name="radio-group-1" value="Значение1" />
+        Женский</label>
+      <label><input type="radio"
+        name="radio-group-1" value="Значение2" />
+        Мужской</label><br />
+      
+      
+     <label>
+          Укажите любимый язык программирования (нажмите Ctrl для выбора нескольких):
+          <br />
+          <select name="field-name-2" required
+            multiple="multiple">
+            <option value="Значение1">Pascal</option>
+            <option value="Значение2">C</option>
+            <option value="Значение3">C++</option>
+            <option value="Значение4">C#</option>
+            <option value="Значение5">JavaScript</option>
+            <option value="Значение6" >PHP</option>
+            <option value="Значение7" >Python</option>
+            <option value="Значение8">Java</option>
+            <option value="Значение9" >Haskel</option>
+            <option value="Значение10" >Clojure</option>
+            <option value="Значение11">Prolog</option>
+            <option value="Значение12" >Scala</option>
+            <option value="Значение13" >Assembler</option>
+          </select>
+        </label><br />
+      
+      <label>
+        Биография:<br />
+        <textarea name="field-name-2">Расскажите о себе</textarea>
+      </label><br />
+      
+      С контрактом ознакомлен (а):<br />
+      <label><input type="checkbox" checked="checked"
+        name="check-1" /> Да </label><br />
+      
+      <input type="submit" value="Отправить" />
+    </form>
+        </section>
+
+        <div style="text-align: center; margin-top: 20px;">
+            <a href="#top" class="back-to-top">Вернуться к началу страницы</a>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>(с) Комиссаренко Елизавета</p>
+        </div>
+    </footer>
+</body>
+</html>
