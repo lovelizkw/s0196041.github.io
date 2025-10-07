@@ -1,0 +1,123 @@
+/* Кастомные стили для переопределения Bootstrap */
+body {
+    font-family: Times New Roman, serif;
+    background-color: #FFE4E1;
+}
+
+/* Header переопределение */
+.bg-primary {
+    background-color: #DB7093 !important;
+}
+
+/* Sidebar Navigation */
+.custom-nav-sidebar .nav-link {
+    color: black;
+    background-color: #f4f4f4;
+    border-radius: 3px;
+    padding: 10px 15px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.custom-nav-sidebar .nav-link:hover {
+    background-color: #DB7093;
+    color: white;
+}
+
+/* Основной контент - flex контейнер для порядка */
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Content sections */
+.content-section {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.content-section h2 {
+    color: black;
+    border-bottom: 2px solid #FFC0CB;
+    padding-bottom: 0.5rem;
+}
+
+.content-section h3 {
+    color: black;
+    border-bottom: 2px solid #FFC0CB;
+    padding-bottom: 0.5rem;
+}
+
+/* Custom list styles */
+.custom-list {
+    list-style: none;
+    padding: 0;
+}
+
+.custom-list li {
+    background-color: #f8f9fa;
+    border-left: 4px solid #FFC0CB;
+}
+
+/* Table styles */
+.data-table th {
+    background-color: #DB7093;
+    color: white;
+}
+
+.data-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Form section */
+.form-section {
+    background-color: #f8f9fa;
+}
+
+/* Back to top links */
+.back-to-top {
+    color: #DB7093;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    background-color: #f8f9fa;
+    border-radius: 3px;
+    display: inline-block;
+}
+
+.back-to-top:hover {
+    text-decoration: underline;
+    background-color: #e9ecef;
+    color: #DB7093;
+}
+
+/* Button override */
+.btn-primary {
+    background-color: #DB7093;
+    border-color: #DB7093;
+}
+
+.btn-primary:hover {
+    background-color: #C71585;
+    border-color: #C71585;
+}
+
+/* Form focus */
+.form-control:focus,
+.form-select:focus {
+    border-color: #DB7093;
+    box-shadow: 0 0 0 0.2rem rgba(219, 112, 147, 0.25);
+}
+
+/* Mobile styles */
+@media (max-width: 767.98px) {
+    .content-section {
+        padding: 15px;
+    }
+    
+    .custom-nav-sidebar .nav-link {
+        padding: 8px 12px;
+    }
+}
