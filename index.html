@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задание № 4</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="bg-primary">
+        <div class="container">
+            <div class="d-flex align-items-center py-3">
+                <div class="logo bg-light p-2 rounded me-3">
+                    <img src="logo.jpg" alt="Логотип сайта" width="50" height="50" class="rounded">
+                </div>
+                <h1 class="site-title text-light m-0">Задание 4: верстка страницы с помощью фреймворка</h1>
+            </div>
+        </div>
+    </header>
+
+    <div class="container-fluid py-4">
+        <div class="row d-flex">
+            <div class="col-md-3 order-1 order-md-1 px-md-3 mb-4 mb-md-0">
+                <div class="h-100 py-3">
+                    <nav class="custom-nav-sidebar h-100">
+                        <div class="content-section p-3 h-100">
+                            <h3 class="mb-3">Навигация</h3>
+                            <ul class="nav flex-column">
+                                <li class="nav-item mb-2">
+                                    <a class="nav-link text-center" href="#hyperlinks">Ссылки</a>
+                                </li>
+                                <li class="nav-item mb-2">
+                                    <a class="nav-link text-center" href="#table-section">Таблица</a>
+                                </li>
+                                <li class="nav-item mb-2">
+                                    <a class="nav-link text-center" href="#formi">Форма</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+
+            <div class="col-md-9 order-2 order-md-2 px-md-3">
+                <div class="h-100 py-3">
+                    <main>
+                        <section id="hyperlinks" class="content-section mb-4 order-2 order-md-1">
+                            <h2 class="mb-3">Список гиперссылок</h2>
+                            <ul class="custom-list"> 
+                                <li class="mb-2 p-2"><a href="http://kubsu.ru" target="_blank">Официальный сайт КубГУ (HTTP)</a></li>
+                                <li class="mb-2 p-2"><a href="https://kubsu.ru" target="_blank">Официальный сайт КубГУ</a></li>
+                                <li class="mb-2 p-2">
+                                    <a href="https://kubsu.ru" target="_blank">
+                                        <img src="flower.jpg" alt="Ссылка-изображение" class="img-fluid" width="300" height="200">
+                                    </a>
+                                </li>
+                                <li class="mb-2 p-2"><a href="#formi">Сокращенная ссылка на внутреннюю страницу (к форме)</a></li>
+                                <li class="mb-2 p-2"><a href="#top">Сокращенная ссылка на главную страницу (в начало)</a></li>
+                                <li class="mb-2 p-2"><a href="#fragment">Ссылка на фрагмент текущей страницы</a></li>
+                                <li class="mb-2 p-2"><a href="https://www.kubsu.ru/ru/search?key=программирование" target="_blank">Ссылка с тремя параметрами в URL</a></li>
+                                <li class="mb-2 p-2"><a href="https://www.kubsu.ru/ru/education/programs?id=1" target="_blank">Ссылка с параметром id в URL</a></li>
+                                <li class="mb-2 p-2"><a href="https://kubsu.ru/ru/news" target="_blank">Относительная ссылка на страницу в текущем каталоге</a></li>
+                                <li class="mb-2 p-2"><a href="https://kubsu.ru/ru/about" target="_blank">Относительная ссылка на страницу в каталоге about</a></li>
+                                <li class="mb-2 p-2"><a href="https://kubsu.ru/ru" target="_blank">Относительная ссылка на страницу в каталоге уровнем выше текущего</a></li>
+                                <li class="mb-2 p-2"><a href="https://kubsu.ru" target="_blank">Относительная ссылка на страницу в каталоге двумя уровнями выше</a></li>
+                                <li class="mb-2 p-2">
+                                    <p class="m-0">Кубанский государственный университет 5 сентября отмечает 
+                                        <a href="https://www.kubsu.ru/ru/node/44498" target="_blank">105-летний юбилей.</a> 
+                                        В этот день в 1920 году вуз впервые открыл двери для студентов трех факультетов.</p>
+                                </li>
+                                <li class="mb-2 p-2"><a href="https://ru.ruwiki.ru/wiki/Кубанский_государственный_университет#Структура" target="_blank">Ссылка на фрагмент страницы стороннего сайта</a></li>
+                                <li class="mb-2 p-2">
+                                    <img src="кубгу.jpg" alt="Ссылка-изображение" usemap="#mymap" class="img-fluid" width="800" height="200">
+                                    <map name="mymap">
+                                        <area shape="rect" coords="0,0,400,200" href="https://kubsu.ru" alt="главная" target="_blank">
+                                        <area shape="rect" coords="400,0,800,200" href="https://kubsu.ru/ru/news" alt="новости" target="_blank">
+                                    </map>
+                                </li>
+                                <li class="mb-2 p-2"><a href="">Ссылка с пустым href</a></li>
+                                <li class="mb-2 p-2"><a>Ссылка без href</a></li>
+                                <li class="mb-2 p-2"><a href="https://kubsu.ru" rel="nofollow" target="_blank">Ссылка, по которой запрещен переход поисковикам</a></li>
+                                <li class="mb-2 p-2"><a href="https://kubsu.ru" rel="noindex" target="_blank">Ссылка, запрещенная для индексации поисковиками</a></li>
+                                <li class="mb-2 p-2">
+                                    Нумерованный список ссылок с подписями title:
+                                    <ol class="mt-2">
+                                        <li class="mb-1"><a href="https://kubsu.ru" title="Официальный сайт университета" target="_blank">Кубанский государственный университет</a></li>
+                                        <li class="mb-1"><a href="https://kubsu.ru/ru/news" title="Новости КубГУ" target="_blank">Новости</a></li>
+                                        <li class="mb-1"><a href="https://kubsu.ru/ru/science" title="Научная деятельность" target="_blank">Наука</a></li>
+                                    </ol>
+                                </li>
+                                <li class="mb-2 p-2"><a href="ftp://login:password@ftp.kubsu.ru/documents/schedule.txt" target="_blank">Ссылка на файл на сервере FTP</a></li>
+                            </ul>
+                        </section>
+
+                        <section id="table-section" class="content-section mb-4 order-3 order-md-2">
+                            <a id="top"></a>
+                            <h2 class="mb-3">Таблица</h2>
+                            <div class="table-responsive">
+                                <table class="table data-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Композитор</th>
+                                            <th>Место рождения</th>
+                                            <th>Произведение</th>
+                                            <th colspan="2">Информация о произведении</th>
+                                            <th>Год создания</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Людвиг ван Бетховен</td>
+                                            <td>Бонн, Германия</td>
+                                            <td>Симфония № 5 "Симфония судьбы"</td>
+                                            <td>до минор</td>
+                                            <td rowspan="2">4 части</td>
+                                            <td>1808</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Вольфганг Амадей Моцарт</td>
+                                            <td>Зальцбург, Австрия</td>
+                                            <td>Симфония №40 "Большая соль-минорная симфония"</td>
+                                            <td>соль минор</td>
+                                            <td>1788</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Иоганн Себастьян Бах</td>
+                                            <td>Айзенах, Германия</td>
+                                            <td>Токката и фуга ре минор</td>
+                                            <td>ре минор</td>
+                                            <td>2 части</td>
+                                            <td>1704</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Петр Ильич Чайковский</td>
+                                            <td>Воткинск, Россия</td>
+                                            <td>Симфония №6 "Патетическая"</td>
+                                            <td>си минор</td>
+                                            <td>4 части</td>
+                                            <td>1893</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Фредерик Шопен</td>
+                                            <td>Желязова-Воля, Польша</td>
+                                            <td>Ноктюрн ми-бемоль мажор</td>
+                                            <td>ми-бемоль мажор</td>
+                                            <td>1 часть</td>
+                                            <td>1830</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Николай Римский-Корсаков</td>
+                                            <td>Тихвин, Россия</td>
+                                            <td>Опера - былина "Садко"</td>
+                                            <td>ре мажор (основная)</td>
+                                            <td>7 картин</td>
+                                            <td>1896</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </section>
+
+                        <section id="formi" class="content-section form-section mb-4 order-4">
+                            <h3 class="mb-3">Форма</h3>
+                            <form action="/" method="POST">
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="fio" class="form-label">ФИО:</label>
+                                        <input type="text" class="form-control" id="fio" name="field-name-1" placeholder="Введите ваше ФИО" required>
+                                    </div>
+                                    
+                                    <div class="col-md-6 mb-3">
+                                        <label for="phone" class="form-label">Номер телефона:</label>
+                                        <input type="tel" class="form-control" id="phone" name="phone" pattern="[0-9+]{11,15}" placeholder="+7 (999) 999-99-99" required>
+                                    </div>
+                                </div>
+                                
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="email" class="form-label">Электронная почта (email):</label>
+                                        <input type="email" class="form-control" id="email" name="field-email" placeholder="fio@mail.ru">
+                                    </div>
+                                    
+                                    <div class="col-md-6 mb-3">
+                                        <label for="birthdate" class="form-label">Дата рождения:</label>
+                                        <input type="date" class="form-control" id="birthdate" name="field-date" value="2004-04-04">
+                                    </div>
+                                </div>
+                                
+                                <div class="mb-3">
+                                    <label class="form-label">Пол:</label>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="radio-group-1" id="female" value="Значение1" checked>
+                                        <label class="form-check-label" for="female">Женский</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="radio-group-1" id="male" value="Значение2">
+                                        <label class="form-check-label" for="male">Мужской</label>
+                                    </div>
+                                </div>
+                                
+                                <div class="mb-3">
+                                    <label for="programming-lang" class="form-label">Укажите любимый язык программирования (нажмите Ctrl для выбора нескольких):</label>
+                                    <select class="form-select" id="programming-lang" name="field-name-2" multiple required>
+                                        <option value="Значение1">Pascal</option>
+                                        <option value="Значение2">C</option>
+                                        <option value="Значение3">C++</option>
+                                        <option value="Значение4">C#</option>
+                                        <option value="Значение5">JavaScript</option>
+                                        <option value="Значение6">PHP</option>
+                                        <option value="Значение7">Python</option>
+                                        <option value="Значение8">Java</option>
+                                        <option value="Значение9">Haskel</option>
+                                        <option value="Значение10">Clojure</option>
+                                        <option value="Значение11">Prolog</option>
+                                        <option value="Значение12">Scala</option>
+                                        <option value="Значение13">Assembler</option>
+                                    </select>
+                                </div>
+                                
+                                <div class="mb-3">
+                                    <label for="biography" class="form-label">Биография:</label>
+                                    <textarea class="form-control" id="biography" name="field-name-2" rows="4">Расскажите о себе</textarea>
+                                </div>
+                                
+                                <div class="mb-3 form-check">
+                                    <input type="checkbox" class="form-check-input" id="contract" name="check-1" required>
+                                    <label class="form-check-label" for="contract">С контрактом ознакомлен (а)</label>
+                                </div>
+                                
+                                <button type="submit" class="btn btn-primary">Отправить</button>
+                            </form>
+                        </section>
+
+                        <section id="fragment" class="content-section mb-4 order-5">
+                            <h2 class="mb-3">Фрагмент страницы</h2>
+                            <p>Это раздел страницы, на который ведет ссылка</p>
+                            <a href="#top" class="back-to-top">Вернуться наверх</a>
+                        </section>
+                    </main>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-primary text-light">
+        <div class="container py-3 text-center">
+            <p class="m-0">(с) Комиссаренко Елизавета</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
